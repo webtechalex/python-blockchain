@@ -38,6 +38,9 @@ class TestBlockchain(unittest.TestCase):
         self.assertEqual(new_transaction_return, expected)
         self.assertEqual(len(self.bc.current_transactions), 1)
 
+    def test_proof_of_work(self):
+        self.assertIsInstance(self.bc.proof_of_work(1), int)
+
 
 def test_suite():
     new_suite = unittest.TestSuite()
