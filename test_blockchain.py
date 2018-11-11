@@ -52,4 +52,4 @@ BlockChainTestSuite = test_suite()
 runner = unittest.TextTestRunner()
 runner.run(BlockChainTestSuite)
 if __name__ == '__main__':
-  unittest.main()
+    unittest.main()
